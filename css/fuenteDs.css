@@ -1,0 +1,19 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 500;
+}
+h1{
+    font-size: 8em;
+    font-family: 'DS-Digital', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+@font-face {
+    font-family:'DS-Digital';
+    font-style: normal;
+    font-weight: 500;
+    src:url('../fonts/DS-DIGIT.TTF');
