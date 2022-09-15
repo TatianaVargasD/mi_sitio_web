@@ -1,0 +1,20 @@
+.img-100{
+    width:500px;
+    margin:5px;
+}
+h1{
+    text-align: center;
+    color:black;
+    font-size: 4em;
+    background-color:aqua;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align:center;
+}
+.imagenes{
+    display: inline-flex;
+   
+}
