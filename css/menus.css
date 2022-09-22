@@ -1,0 +1,17 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+.box{
+   text-align: right;
+   background-color: rgb(64,64,64.7);
+   font-size: 4em;
+   word-spacing: 0.5em;
+}
+.menu{
+   color: antiquewhite;
+   display: inline-block;
+   
+}
+
+

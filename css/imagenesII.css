@@ -1,0 +1,35 @@
+.img-100{
+    width:50%;
+    margin:1em;
+}
+h1{
+    text-align: center;
+    color:black;
+    font-size: 4em;
+    background-color:aqua;
+}
+h2 {
+    text-align: center;
+}
+.imagenes{
+    display: inline-flex;
+}
+p{
+    text-align: justify;
+    width: 85%;
+    font-size:1.5em;
+}
+.imagen-100{
+    width: 50%;
+    margin: 1em;
+
+}
+.imagen2{
+    display:inline;
+}
+.box-imagen2{
+    display: inline-block;
+    width: 50%;
+    margin: 1em;
+    vertical-align: top;
+}
