@@ -1,7 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+
 h1{
     text-align: center;
     color:black;
@@ -19,24 +16,24 @@ p{
 .img-100{
     display: block;
     width: 80%;
-/*     margin: 16px; */
     margin: 0 auto;
 }
-/* .imagen2{
-    display:inline-flex;
-    width: 30%;
-    margin: 1em;
- }*/
+
 .box {
     display:inline-block; 
     border: 3px solid rgb(64,64,64.7);
-    border-radius: 7px;
-    margin: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+    border-radius: 3%;
+    margin: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
     width: 30%;
+    height: 50%;
     vertical-align: top; 
-  
+}
+.imagen2 {
+    margin-left: 0.1%;
 
 }
-
+.imagenes{
+    margin-left: 2%;
+}
