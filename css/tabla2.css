@@ -4,25 +4,37 @@
     align-items: center;
 }
 th{
-    border: 1.5px solid black;
+    border: 1.5px solid rgb(161, 157, 157);
     padding:10px 12px;
     
 }
+.borde{
+    border-radius: 10px 0px 0px 0px;
+    border: none;
+}
+.borde2{
+    border-radius: 0px 10px 0px 0px;
+    border: none;
+}
+.borde3{
+    border-radius: 0px 0px 0px 10px;
+    border: none;
+}
+
 table{
     border-collapse:collapse;
    border-radius: 10px;
 }
 td{
-    border:1.5px solid black;
+    border:1.5px solid rgb(161, 157, 157);
     text-align: center;
     padding:10px 12px; 
+    background-color: rgb(240, 240, 240);
 }
 h1{
     text-align: center;
 }
-img{
-    width: 200px;
-}
+
 .figuras{
     font-weight: 200;
     color: rgb(188, 9, 9);
