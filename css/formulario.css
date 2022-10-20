@@ -28,6 +28,14 @@ input[type="text"]:hover{
     background-color: rgb(38,71,84);
     
 }
+input[type="submit"]{
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1%;
+    font-size: 1em;
+}
 h1{
     text-align: center;
     color: white;
@@ -42,6 +50,7 @@ textarea{
 select{
     background-color: rgb(38,71,84);
     color: white;
+    padding: 2px;
 }
 body{
     background-color:rgb(38,71,84) ;
