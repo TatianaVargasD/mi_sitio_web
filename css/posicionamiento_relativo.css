@@ -1,0 +1,46 @@
+.box-1{
+    width: 500px;
+    height: 100px;
+    border: 2px solid rgb(64, 64, 64);
+    margin: 150px;
+}
+.box-2{
+    width: 150px;
+    height: 120px;
+    background-color:darkblue;
+    position: relative;
+    top: 100%;
+    left: 30px;
+}
+.box-3{
+    width: 150px;
+    height: 120px;
+    background-color:rgb(98, 98, 143);
+    position: relative;
+    top: 100%;
+    left: 30px;
+}
+.box-4{
+    width: 150px;
+    height: 120px;
+    background-color:rgb(211, 118, 188);
+    position: relative;
+    top: 100%;
+    left: 30px;
+}
+.mini-box{
+    width: 150px;
+    height: 120px;
+    position:relative;
+    background-color: rgb(176, 239, 239);
+    left: 150px;
+    top: 0%;
+}
+.mini-box2{
+    width: 150px;
+    height: 120px;
+    position:relative;
+    background-color: rgb(123, 211, 180);
+    left: 150px;
+    top: 0%;
+}

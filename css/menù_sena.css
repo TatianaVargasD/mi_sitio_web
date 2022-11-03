@@ -9,7 +9,6 @@ body{
     background-color:rgb(255,255,255);
     position: absolute;
     width: 100%;
-    
     box-shadow: 8px 8px 8px gray;
 
 }
@@ -30,7 +29,6 @@ a{
     
 }
 .menu1:hover{
-    font-size: 0.9em;
     background-color: rgb(196, 196, 196);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
