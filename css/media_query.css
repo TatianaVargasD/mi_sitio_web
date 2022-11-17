@@ -59,6 +59,11 @@
         background-color: rgb(97, 91, 91, 0.9);
     }
     .main-menu{
+       
+        display: none;
+    }
+    .main-menu-visible{
+        display: block;
         background-color: rgb(157, 204, 246);
         margin-top: 80px;
         padding: 0;
