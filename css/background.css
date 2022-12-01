@@ -26,6 +26,10 @@ li{
     font-size: 1.4em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+li:hover{
+    background-color: rgb(97, 108, 166);
+    cursor: pointer;
+}
 .last-item{
     margin-right: 80px;
 }
