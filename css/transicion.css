@@ -1,0 +1,104 @@
+.box-1{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    display: inline-block;
+    background-color: darkcyan;
+    transition: background-color 1000ms;
+}
+.box-1:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.box-2{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    position: static;
+    display: inline-block;
+    background-color: rgb(210, 166, 251);
+    transition: margin-left 1.5s;
+}
+.box-2:hover{
+   margin-left: 330px;
+    cursor: pointer;
+}
+.box-3{
+    width: 300px;
+    height: 300px;
+    left: 690px;
+    position: fixed;
+    margin: 30px;   
+    display: inline-block;
+    background-color: rgb(168, 168, 237);
+    transition: left 1.5s;
+}
+
+.box3-old{
+    left:720px ;
+    display: inline-block;
+    background-color: rgb(89, 89, 134);
+    cursor: pointer;
+
+}
+.box3-new{
+    left: 1050px;
+    display: inline-block;
+    background-color: rgb(124, 124, 255);
+}
+.box-4-gray{
+    width: 150px;
+    height: 80px;
+    margin: 30px;
+   border-radius: 40px;
+   background-color: rgb(153, 150, 150);
+   position: relative;
+   cursor: pointer;
+   transition: background-color 400ms;
+}
+.box-4-green{
+    width: 150px;
+    height: 80px;
+    margin: 30px;
+   border-radius: 40px;
+   position: relative;
+   cursor: pointer;
+   transition: background-color 400ms;
+   background-color: rgb(118, 255, 118);
+}
+.box-4-off{
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    border-radius: 38px;
+    background-color: rgb(111, 109, 109);
+    top: 2px;
+    left: 4px;
+    transition: left 400ms;
+}
+.box-4-on{
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    border-radius: 38px;
+    background-color: rgb(100, 94, 94);
+    left: 70px;
+    top:2px;
+}
+ .box-5{
+    position: fixed;
+    bottom: -200px;
+    width: 300px;
+    height: 300px;
+    left: 690px;
+    margin: 30px;   
+    display: inline-block;
+    background-color: rgb(168, 168, 237);
+    transition: all 1.2s;
+}
+.box-5:hover{
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    background-color: aliceblue;
+}
