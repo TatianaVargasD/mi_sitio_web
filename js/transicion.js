@@ -6,7 +6,7 @@ box.addEventListener("click",function(){
     }
     else{
         box.classList.remove("box3-new");
-        box.classList.add("box3-old");
+        box.classList.add("box3-old"); 
     }
 })
 let box4=document.getElementById("box4");

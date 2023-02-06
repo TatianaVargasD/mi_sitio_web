@@ -33,7 +33,7 @@ nav ul li a{
     background-color: #153041;
     text-align: left;
 }
-nav ul li:hover .children{
+nav ul li:hover .children {
     display: block;
     width: 100%;
     text-align: left;
@@ -70,13 +70,23 @@ p{
     body{
         padding-top: 70px;
     }
-    nav{
+    .menu_activo{
         position:fixed;
         height:100vh;
-        width: 60%;
+        width: 0%;
         left:0;
         overflow-y: auto;
         overflow-x:hidden ;
+        transition: all 30ms;
+    }
+    .menu_inactivo{
+        position:fixed;
+        height:100vh;
+        width: 50%;
+        left:0;
+        overflow-y: auto;
+        overflow-x:hidden ;
+        transition: all 30ms; 
     }
     .menu-bar{
         display: block;
