@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    color: rgb(127, 153, 240);
+    justify-content: center;
+    text-align: center;
+}
+.box{
+    background-color: rgb(138, 217, 241);
+    border: 1px solid rgb(121, 121, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2em;
+    cursor: pointer;
+    
+}
+.box-main-week{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
+
+
+}
+.box-main-days{
+    display: grid;
+    grid-template-columns:repeat(7,150px);
+    grid-template-rows:100px repeat(7,150px)150px;
+   
+}
+.box3-1{
+    background-color: rgb(245, 213, 155);
+    grid-column-start: 4;
+    grid-column-end: 5;
+}

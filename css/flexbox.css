@@ -94,12 +94,11 @@ h2{
     justify-content: center;
     border-bottom:2px solid rgb(64,64,64,.8) ;
     width: 750px;
-    box-shadow: 0 2px 5px rgb(64,64,64,.8);
+   border-left: 2px solid rgb(64,64,64,.8) ;
 }
 .box-box-align{
     display: flex;
     width: 130px;
-    background-color: rgb(53, 148, 243);
     margin-bottom: 0;
     font-size: 1.4em;
     justify-content: center;
@@ -108,27 +107,56 @@ h2{
 }
 .box47{
     height: 350px;
+    background-color: rgb(255, 198, 132);
 }
 .box48{
     height: 210px;
+    background-color:rgb(152, 109, 192);
 }
 .box49{
     height: 60px;
+    background-color: rgb(240, 147, 224);
 }
 .box50{
     height: 390px;
+    background-color: rgb(126, 168, 230);
 }
 .box51{
     height: 280px;
+    background-color: rgb(233, 122, 122);
 }
 .box-main-align{
     display: flex;
     justify-content: center;
 }
 .texto-grafica{
-    transform: rotate(-90deg);
-    font-size: 1.2em;
-    background-color: red;
-    height: 30px;
-    width: 500px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 10px;
 }
+.linea{
+    border-bottom: 1.5px solid rgb(201, 195, 195);
+    position: absolute;
+    margin-bottom: 60px;
+    z-index: -1;
+    width: 750px;
+}
+.one{
+    margin-bottom: 350px;
+}
+.two{
+    margin-bottom: 210px;
+}
+.four{
+    margin-bottom: 390px;
+}
+
+.five{
+    margin-bottom: 280px;
+}
+
+
+
+
