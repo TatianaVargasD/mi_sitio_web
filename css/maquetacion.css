@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box-header{
+    display: grid;
+    grid-template: "logo     busqueda   btn-empresas btn-iniciar-sesion menu-hamburguer " 60px 
+                   "main-img  main-img    main-img         main-img         main-img"    400px/
+                    500px      400px      300px            300px             400px;
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(0,20,40);;
+}
+.busqueda{
+    grid-area: busqueda;
+    background-color: white;
+}
+.btn-empresas{
+    grid-area:btn-empresas;
+    background-color: rgb(0,20,40);
+}
+.btn-iniciar-sesion{
+    grid-area: btn-iniciar-sesion;
+    background-color: rgb(0,20,40);
+}
+.menu-hamburguer{
+    grid-area: menu-hamburguer;
+    background-color: rgb(0,20,40);
+}
+.main-img{
+    grid-area: main-img;
+    background-color: rgb(193, 144, 238);
+}
+.texto-grid{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.texto-grid-2{
+    color:black ;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
