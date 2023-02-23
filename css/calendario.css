@@ -41,7 +41,7 @@
 .box-main-days{
     display: grid;
     justify-content: center;
-    grid-template-columns:repeat(7,250px);
+    grid-template-columns:repeat(7,260px);
     grid-template-rows:repeat(5,200px);
     gap: 5px;
 }
@@ -60,6 +60,6 @@
 .dia-fest{
     text-align:end;
     position: relative;
-    top:35px;
+    top:70px;
 }
 
