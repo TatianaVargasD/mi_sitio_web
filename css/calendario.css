@@ -41,8 +41,9 @@
 .box-main-days{
     display: grid;
     justify-content: center;
-    grid-template-columns:repeat(7,185px);
-    grid-template-rows:repeat(5,185px);
+    grid-template-columns:repeat(7,250px);
+    grid-template-rows:repeat(5,200px);
+    gap: 5px;
 }
 .box3-8{
     background-color: rgb(245, 155, 208);
