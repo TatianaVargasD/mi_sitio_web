@@ -1,39 +1,64 @@
 *{
     margin: 0;
-    padding:0 ;
+    padding: 0;
 }
-h1{
+.mes-23{
     font-family: 'Lobster', cursive;
-    font-size: 5em;
+    font-size: 150px;
+    font-weight: 600;
     color: rgb(127, 153, 240);
-    justify-content: center;
-    text-align: center;
-}
-.box{
-    background-color: rgb(138, 217, 241);
-    border: 1px solid rgb(121, 121, 121);
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 2em;
+}
+.box{
+    border: 1.5px solid rgb(121, 121, 121);
+    padding: 30px;
+    font-size: 1.5em;
+    border-radius: 20% 15%;
+    margin: 5.5px;
+    background-color: rgb(226, 246, 252);
     cursor: pointer;
-    
+}
+.box-1{
+    background-color: rgb(185, 231, 245);
+    border: 1.5px solid rgb(121, 121, 121);
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-radius: 15% 15%;
+    cursor: pointer;
 }
 .box-main-week{
-    display: grid;
-    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
-
-
+    display: flex;
+    justify-content: center;
+    grid-template-columns:repeat(7,150px);
+    margin: 40px;
+    gap: 20px;
 }
 .box-main-days{
     display: grid;
-    grid-template-columns:repeat(7,150px);
-    grid-template-rows:100px repeat(7,150px)150px;
-   
+    justify-content: center;
+    grid-template-columns:repeat(7,185px);
+    grid-template-rows:repeat(5,185px);
+}
+.box3-8{
+    background-color: rgb(245, 155, 208);
 }
 .box3-1{
-    background-color: rgb(245, 213, 155);
-    grid-column-start: 4;
-    grid-column-end: 5;
+    background-color: rgb(247, 226, 244);
 }
+.box3-2{
+    background-color: rgb(247, 226, 244);
+}
+.box3-3{
+    background-color:rgb(247, 226, 244);
+}
+.dia-fest{
+    text-align:end;
+    position: relative;
+    top:35px;
+}
+
