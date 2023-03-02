@@ -1,0 +1,55 @@
+.mainbox{
+    display: grid;
+    grid-template: "cabeza        empty         empty" 150px
+                    "imagen-prin  imagen-prin  imagen-prin"500px
+                    "aticulo1     aticulo2      aticulo3" 400px
+                    "txt-art1     txt-art2      txt-art3" 400px/
+                    600px; 
+    grid-gap: 40px;             
+}
+.header{
+    grid-area: cabeza;
+    background-color: rgb(243, 44, 44);
+    border-radius: 15px;
+}
+.img-principal{
+    grid-area: imagen-prin;
+    background-color: darkcyan;
+    border-radius: 15px;
+}
+.img-articulo{
+    background-color: rgb(71, 71, 71);
+    border-radius: 15px;
+}
+.one{
+    grid-area: aticulo1;
+}
+.two{
+    grid-area: aticulo2;
+}
+.three{
+    grid-area: aticulo3;
+}
+
+.art1{
+    grid-area: txt-art1;
+}
+.art2{
+    grid-area: txt-art2;
+}
+.art3{
+    grid-area: txt-art3;
+}
+.texto{
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.txt{
+    padding: 20px;
+    font-size: 1.8em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
