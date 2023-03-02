@@ -1,10 +1,10 @@
 .mainbox{
     display: grid;
-    grid-template: "cabeza        empty         empty" 150px
-                    "imagen-prin  imagen-prin  imagen-prin"500px
-                    "aticulo1     aticulo2      aticulo3" 400px
-                    "txt-art1     txt-art2      txt-art3" 400px/
-                    600px; 
+    grid-template:  " empty-left cabeza        empty        empty       emptry-right" 150px
+                    " empty-left imagen-prin  imagen-prin   imagen-prin emptry-right"500px
+                    " empty-left aticulo1     aticulo2      aticulo3    emptry-right" 400px
+                    " empty-left txt-art1     txt-art2      txt-art3    emptry-right" 400px/
+                     1fr          30%         30%           30%         1fr ; 
     grid-gap: 40px;             
 }
 .header{
@@ -53,3 +53,4 @@
     font-size: 1.8em;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
