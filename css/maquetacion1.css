@@ -53,4 +53,29 @@
     font-size: 1.8em;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+@media only screen and (max-width:1150px){
+    .mainbox{
+        grid-template: "empty-left   cabeza        empty-head   empty-head    empty-right" 100px
+                       "empty-left   imagen-prin   imagen-prin  imagen-prin   empty-right" 450px
+                       "empty-left   aticulo1      empty-img-1  aticulo2      empty-right" 250px
+                       "empty-left   txt-art1      empty-img-1  txt-art2      empty-right"
+                       "empty-left   aticulo3      empty-img-1  empty-img-3   empty-right" 250px
+                       "empty-left   txt-art3      empty-img-1  empty-img-3   empty-right" /
+                        1fr          43%           2%          43%           1fr;
+    }
+
+}
+@media only screen and (max-width:1000px){
+    .mainbox{
+        grid-template:   "empty-left   cabeza      empty-right" 120px
+                         "empty-left   imagen-prin empty-right" 500px
+                         "empty-left   aticulo1    empty-right" 250px
+                         "empty-left   txt-art1    empty-right" 
+                         "empty-left   aticulo2    empty-right" 250px
+                         "empty-left   txt-art2    empty-right" 
+                         "empty-left   aticulo3    empty-right" 250px
+                         "empty-left   txt-art3    empty-right"  /
+                          1fr          80%         1fr;
+    }
+}
 
