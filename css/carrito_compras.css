@@ -1,42 +1,49 @@
 h1{
     text-align: center;
 }
+
 .box-main{
-    margin: 0 70px;
     display: grid;
     grid-template:"img-box-main empty "/ 
                    435px          1fr ;
 }
-.img{
-    border-radius: 10px;
-    cursor: pointer;
-}
 .img-box-main{
+    margin: 0 70px;
     display: grid;
     width: 100%;
-    grid-template: "img-box      img-box  img-box   img-box   img-box     img-box   img-box" 435px
-                    "empty-0     empty-0   empty-0  empty-0   empty-0      empty-0   empty-0" 30px
-                    "img-mini-1  empty-1 img-mini-2  empty-2  img-mini-3  empty-3   img-mini-4"130px /
-                    90px         25px    90px     25px       90px       25px       90px
+    grid-template: "img-box      img-box   img-box     img-box   img-box     img-box   img-box" 435px
+                    "empty-0     empty-0   empty-0     empty-0   empty-0     empty-0   empty-0" 30px
+                    "box-mini-1  empty-1   box-mini-2  empty-2   box-mini-3  empty-3   box-mini-4"90px /
+                    90px         20px      90px        20px       90px       20px       90px
 }
 .img-box{
     grid-area: img-box;
     width: 100%;
     margin-bottom: 30px;
+    border-radius: 10px;
+    cursor: pointer;
 }
-.img-mini-1{
-    grid-area: img-mini-1;
-    width: 100%;
+.box-img-1{
+    grid-area: box-mini-1;
 }
-.img-mini-2{
-    grid-area: img-mini-2;
-    width: 100%;
+.box-img-2{
+    grid-area: box-mini-2;
 }
-.img-mini-3{
-    grid-area: img-mini-3;
-    width: 100%;
+.box-img-3{
+    grid-area: box-mini-3;  
 }
-.img-mini-4{
-    grid-area: img-mini-4;
+.box-img-4{
+    grid-area: box-mini-4;    
+}
+.img-mini{
     width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.box-img-mini{
+    border: 2px solid rgb(255, 125, 26);
+    border-radius: 15px;
+}
+.img-mini-activo{
+    opacity: 0.4;
 }
