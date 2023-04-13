@@ -1,3 +1,4 @@
+/*Se utiliza para darle click a las imagenes y que cambie el color*/
 let imgBox=document.getElementById("imgBox");
 let imgMini1=document.getElementById("imgMini1");
 let imgMini2=document.getElementById("imgMini2");
@@ -50,5 +51,20 @@ imgMini4.addEventListener("click",function(){
     BoxMini2.classList.remove("img-mini-activo")
     BoxMini3.classList.remove("img-mini-activo")
     BoxMini4.classList.add("img-mini-activo")
-})
+});
+/* Botones de aumentar y disminuir compra */
+let btnRestar = document.getElementById("btnRestar");
+let btnSumar = document.getElementById("btnSumar");
+let cantBox = document.getElementById("cantBox");
+let btnCantidad = document.getElementById("btnCantidad");
+let numeroElementos= document.getElementById("numeroElementos")
+btnSumar.addEventListener("click",function(){
+    let numeroElementosTxt=document.getElementById("numeroElementos").innerHTML;
+    let numeroElementosInt = parseInt(numeroElementosTxt);
+    let totalElementosInt= numeroElementosInt +1;
+    let totalElementostxt=totalElementosInt.toString();
+    numeroElementos.innerHTML=totalElementostxt;
+});
+
+
 
