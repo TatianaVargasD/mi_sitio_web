@@ -71,14 +71,14 @@ btnSumar.addEventListener("click",function(){
 
         
         let CostoProductoInt = parseInt(CostoTxt);
-        let totalProductosInt = 85000*totalElementosInt
+        let totalProductosInt = 73000*totalElementosInt
         console.log(CostoProductoInt)
         let CostoProductosTxt=totalProductosInt.toString()
         Costo.innerHTML= CostoProductosTxt
         
     }
     
-     
+
 });
 btnRestar.addEventListener("click",function () {
     let numeroElementosTxt=document.getElementById("numeroElementos").innerHTML;
