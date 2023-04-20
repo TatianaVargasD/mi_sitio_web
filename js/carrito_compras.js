@@ -58,13 +58,45 @@ let btnSumar = document.getElementById("btnSumar");
 let cantBox = document.getElementById("cantBox");
 let btnCantidad = document.getElementById("btnCantidad");
 let numeroElementos= document.getElementById("numeroElementos")
+let Costo=document.getElementById("costo");
 btnSumar.addEventListener("click",function(){
     let numeroElementosTxt=document.getElementById("numeroElementos").innerHTML;
-    let numeroElementosInt = parseInt(numeroElementosTxt);
-    let totalElementosInt= numeroElementosInt +1;
-    let totalElementostxt=totalElementosInt.toString();
-    numeroElementos.innerHTML=totalElementostxt;
+    let CostoTxt=document.getElementById("costo").innerHTML;
+    if(numeroElementosTxt<10){
+        let numeroElementosInt = parseInt(numeroElementosTxt);
+        let totalElementosInt= numeroElementosInt +1;
+        console.log(totalElementosInt)
+        let totalElementostxt=totalElementosInt.toString();
+        numeroElementos.innerHTML=totalElementostxt;
+
+        
+        let CostoProductoInt = parseInt(CostoTxt);
+        let totalProductosInt = 85000*totalElementosInt
+        console.log(CostoProductoInt)
+        let CostoProductosTxt=totalProductosInt.toString()
+        Costo.innerHTML= CostoProductosTxt
+        
+    }
+    
+     
 });
+btnRestar.addEventListener("click",function () {
+    let numeroElementosTxt=document.getElementById("numeroElementos").innerHTML;
+    let CostoTxt=document.getElementById("costo").innerHTML;
+    if (numeroElementosTxt>0) {
+        let numeroElementosInt = parseInt(numeroElementosTxt);
+        let totalElementosInt= numeroElementosInt -1;
+        let totalElementostxt=totalElementosInt.toString();
+        numeroElementos.innerHTML=totalElementostxt;
+
+
+        let CostoProductoInt = parseInt(CostoTxt);
+        let totalProductosInt = 85000*totalElementosInt
+        console.log(CostoProductoInt)
+        let CostoProductosTxt=totalProductosInt.toString()
+        Costo.innerHTML= CostoProductosTxt
+    }
+})
 
 
 
