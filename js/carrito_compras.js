@@ -74,7 +74,8 @@ btnSumar.addEventListener("click",function(){
         let totalProductosInt = 73000*totalElementosInt
         console.log(CostoProductoInt)
         let CostoProductosTxt=totalProductosInt.toString()
-        Costo.innerHTML= CostoProductosTxt
+        CostoProductosTxt="$"+ new Intl.NumberFormat().format(CostoProductosTxt);
+        Costo.innerHTML= CostoProductosTxt;
         
     }
     
@@ -91,9 +92,10 @@ btnRestar.addEventListener("click",function () {
 
 
         let CostoProductoInt = parseInt(CostoTxt);
-        let totalProductosInt = 73000*totalElementosInt
+        let totalProductosInt=  73000*totalElementosInt
         console.log(CostoProductoInt)
         let CostoProductosTxt=totalProductosInt.toString()
+        CostoProductosTxt="$"+ new Intl.NumberFormat().format(CostoProductosTxt);
         Costo.innerHTML= CostoProductosTxt
     }
 })
