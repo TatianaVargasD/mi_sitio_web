@@ -69,7 +69,6 @@ btnSumar.addEventListener("click",function(){
         let totalElementostxt=totalElementosInt.toString();
         numeroElementos.innerHTML=totalElementostxt;
 
-        
         let CostoProductoInt = parseInt(CostoTxt);
         let totalProductosInt = 73000*totalElementosInt
         console.log(CostoProductoInt)
@@ -79,7 +78,6 @@ btnSumar.addEventListener("click",function(){
         
     }
     
-
 });
 btnRestar.addEventListener("click",function () {
     let numeroElementosTxt=document.getElementById("numeroElementos").innerHTML;
@@ -98,16 +96,16 @@ btnRestar.addEventListener("click",function () {
         CostoProductosTxt="$"+ new Intl.NumberFormat().format(CostoProductosTxt);
         Costo.innerHTML= CostoProductosTxt
     }
-})
+});
 let btnCerrar=document.getElementById("cerrar")
 let LighBox= document.getElementById("lightBox")
 
 btnCerrar.addEventListener("click",function () {
     LighBox.classList.add("ligh-hidden")
-})
+});
 imgBox.addEventListener("click",function () {
     LighBox.classList.remove("ligh-hidden")
       
-})
+});
 
 

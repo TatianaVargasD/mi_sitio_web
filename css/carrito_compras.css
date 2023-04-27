@@ -117,19 +117,18 @@ h1{
 }
 
 .btn-adelante {
-   /*  top: 25%; */
-    
     left: 87%;
     z-index: 20;
     top: 152px;
     background-color: antiquewhite;
+    cursor: pointer;
 }
 
 .btn-atras {
-   /*  top: 25%; */
     left: -2%;
     z-index: 20;
-    background-color: aqua;
+    background-color: antiquewhite;
+    cursor: pointer;
 }
 
 .btn-cerrar {
@@ -140,9 +139,9 @@ h1{
     z-index: 400;
     font-size: 1.5em;
     color:#f07313;
+    cursor: pointer;
 
 }
-
 .style-btn {
     font-weight: 900;
     font-size: 1.3em;
@@ -175,10 +174,8 @@ h1{
     grid-area: img-secundary-4;
 }
 
-.img-secundary {
-    
+.img-secundary {  
     width: 100px;
-    /* height: 80px; */
     border-radius: 10px;
     cursor: pointer;
 } 
