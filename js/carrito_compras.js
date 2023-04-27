@@ -99,6 +99,15 @@ btnRestar.addEventListener("click",function () {
         Costo.innerHTML= CostoProductosTxt
     }
 })
+let btnCerrar=document.getElementById("cerrar")
+let LighBox= document.getElementById("lightBox")
 
+btnCerrar.addEventListener("click",function () {
+    LighBox.classList.add("ligh-hidden")
+})
+imgBox.addEventListener("click",function () {
+    LighBox.classList.remove("ligh-hidden")
+      
+})
 
 

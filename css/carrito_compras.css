@@ -86,29 +86,110 @@ h1{
 }
 .lighbox{
     position: fixed;
-    background-color: rgb(64,64,64,.9);
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(64, 64, 64, .9);
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
 }
 .main-lighbox{
     width: 550px;
     height: 600px;
-    background-color: red;
+    
 }
-.btn-atras{
+.btn-style {
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: rgb(24, 24, 24);
     position: relative;
-    top: 50%;
-    left:96%;
+    top: 198px;
+}
+
+.ligh-hidden {
+    display: none;
+}
+
+.btn-adelante {
+   /*  top: 25%; */
+    
+    left: 87%;
+    z-index: 20;
+    top: 152px;
+    background-color: antiquewhite;
+}
+
+.btn-atras {
+   /*  top: 25%; */
+    left: -2%;
+    z-index: 20;
+    background-color: aqua;
+}
+
+.btn-cerrar {
+    position: relative;
+    display: flex;
+    left: 85%;
+    font-size: 1.3em;
+    z-index: 400;
+    font-size: 1.5em;
+    color:#f07313;
+
+}
+
+.style-btn {
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+.img-main-ligh {
+    position: relative;
+    grid-area: img-main;
+    top: -88px;
+    width: 100%;
+    height: 410px;
+    border-radius: 20px;
+    z-index: 10;
+    animation: infinite;
+    transition: animation 15s;
+}
+.box-ImgSecond1 {
+    grid-area: img-secundary-1;
+}
+
+.box-ImgSecond2 {
+    grid-area: img-secundary-2;
+}
+
+.box-ImgSecond3 {
+    grid-area: img-secundary-3;
+}
+
+.box-ImgSecond4 {
+    grid-area: img-secundary-4;
+}
+
+.img-secundary {
+    
+    width: 100px;
+    /* height: 80px; */
+    border-radius: 10px;
+    cursor: pointer;
+} 
+
+.box-img-activo {
+    margin-left: 20px;
+    display: grid;
+    width: 100%;
+    grid-template: " img-main          img-main      img-main            img-main   img-main           img-main   img-main       " 370px 
+                    "empty-0           empty-0       empty-0             empty-0    empty-0            empty-0    empty-0        " 1px  
+                    "img-secundary-1   empty-1       img-secundary-2     empty-2    img-secundary-3    empty-3    img-secundary-4 "20px /
+                    105px               20px         105px                20px      105px             20px        105px;
 }
 
