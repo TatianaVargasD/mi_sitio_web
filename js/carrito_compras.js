@@ -42,7 +42,7 @@ imgMini3.addEventListener("click",function(){
     BoxMini4.classList.remove("img-mini-activo")
 })
 imgMini4.addEventListener("click",function(){
-    imgBox.setAttribute("src","img/image-product-4 .jpg");
+    imgBox.setAttribute("src","img/image-product-4.jpg");
     BoxMini1.classList.remove("box-img-mini")
     BoxMini2.classList.remove("box-img-mini")
     BoxMini3.classList.remove("box-img-mini")
@@ -115,102 +115,7 @@ let boxImgSecond2=document.getElementById("boxImgSecond2")
 let boxImgSecond3=document.getElementById("boxImgSecond3")
 let boxImgSecond4=document.getElementById("boxImgSecond4")
 let imgMainLigh=document.getElementById("imgMainLigh")
-/* let imagenes=["img/image-product-1.jpg","img/image-product-2.jpg","img/image-product-3.jpg","img/image-product-4.jpg"]
-let contador=0
-let sombras=0
-function carrusel(contenedor) {
-    contenedor.addEventListener("click", e=>{
-        let ConAdelante=contenedor.querySelector('.adelante'),
-        ConAtras=contenedor.querySelector('.atras'),
-        img=contenedor.querySelector('.img-main-ligh'),
-        fls=e.target;
 
-        if (fls==ConAtras) {
-            if (contador>0) {
-                img.src=imagenes[contador-1]
-                contador-1
-            }else{
-                img.src=imagenes[contador.length-1]
-                contador=imagenes.length-1
-            } 
-            sombras--
-            if (sombras==0) {
-                boxImgSecond1.classList.add("sombras")
-                boxImgSecond2.classList.remove("sombras")
-                boxImgSecond3.classList.remove("sombras")
-                boxImgSecond4.classList.remove("sombras")
-            }else if (sombras==1) {
-                boxImgSecond1.classList.remove("sombras")
-                boxImgSecond2.classList.add("sombras")
-                boxImgSecond3.classList.remove("sombras")
-                boxImgSecond4.classList.remove("sombras")
-            }else if (sombras==2) {
-                boxImgSecond1.classList.remove("sombras")
-                boxImgSecond2.classList.remove("sombras")
-                boxImgSecond3.classList.add("sombras")
-                boxImgSecond4.classList.remove("sombras")
-            }else if (sombras==3) {
-                boxImgSecond1.classList.remove("sombras")
-                boxImgSecond2.classList.remove("sombras")
-                boxImgSecond3.classList.remove("sombras")
-                boxImgSecond4.classList.add("sombras")
-            }else{
-                
-                boxImgSecond1.classList.remove("sombras")
-                boxImgSecond2.classList.remove("sombras")
-                boxImgSecond3.classList.remove("sombras")
-                boxImgSecond4.classList.add("sombras")
-                sombras=3
-                
-            }
-        }
-        if (fls==ConAdelante) {
-            if (contador<imagenes.length-1) {
-                img.src=imagenes[contador+1]
-                contador+1
-            }else{
-                img.src=imagenes[0]
-                contador=0
-            } 
-            sombras++
-            if (sombras==0) {
-                boxImgSecond1.classList.add("sombras")
-                boxImgSecond2.classList.remove("sombras")
-                boxImgSecond3.classList.remove("sombras")
-                boxImgSecond4.classList.remove("sombras")
-            }else if (sombras==1) {
-                boxImgSecond1.classList.remove("sombras")
-                boxImgSecond2.classList.add("sombras")
-                boxImgSecond3.classList.remove("sombras")
-                boxImgSecond4.classList.remove("sombras")
-            }else if (sombras==2) {
-                boxImgSecond1.classList.remove("sombras")
-                boxImgSecond2.classList.remove("sombras")
-                boxImgSecond3.classList.add("sombras")
-                boxImgSecond4.classList.remove("sombras")
-            }else if (sombras==3) {
-                boxImgSecond1.classList.remove("sombras")
-                boxImgSecond2.classList.remove("sombras")
-                boxImgSecond3.classList.remove("sombras")
-                boxImgSecond4.classList.add("sombras")
-            }else{
-                boxImgSecond1.classList.add("sombras")
-                boxImgSecond2.classList.remove("sombras")
-                boxImgSecond3.classList.remove("sombras")
-                boxImgSecond4.classList.remove("sombras")
-                sombras=0
-                
-            }
-        }
-    })
-
-    
-}
-document.addEventListener("DOMContentLoaded",()=>{
-    let contenedor= document.querySelector('.lighbox')
-
-    carrusel(contenedor)
-}) */
 let imagenes=['img/image-product-1.jpg','img/image-product-2.jpg','img/image-product-3.jpg','img/image-product-4.jpg']
 let cont=0
 let somb=0

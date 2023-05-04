@@ -16,7 +16,7 @@ h1{
 .img-box-main{
     display: grid;
     width: 100%;
-    grid-template: "img-box      img-box   img-box     img-box   img-box     img-box   img-box" 435px
+    grid-template: "img-box      img-box   img-box     img-box   img-box     img-box   img-box" 400px
                     "empty-0     empty-0   empty-0     empty-0   empty-0     empty-0   empty-0" 30px
                     "box-mini-1  empty-1   box-mini-2  empty-2   box-mini-3  empty-3   box-mini-4"90px /
                     90px         20px      90px        20px       90px       20px       90px
@@ -151,7 +151,7 @@ h1{
     position: relative;
     grid-area: img-main;
     top: -88px;
-    width: 100%;
+    width: 90%;
     height: 410px;
     border-radius: 20px;
     z-index: 10;
@@ -197,11 +197,11 @@ img.activa.prin{
 .box-img-activo {
     position: relative;
     top: -12%;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     display: grid;
     width: 100%;
-    grid-template:  "img-secundary-1   empty-1       img-secundary-2     empty-2    img-secundary-3    empty-3    img-secundary-4 "20px /
-                     105px             20px          105px               20px       105px              20px       105px;
+    grid-template:  "img-secundary-1   empty-1       img-secundary-2     empty-2    img-secundary-3    empty-3    img-secundary-4 "/
+                     106px             25px          106px               25px       106px              25px       106px;
 }
 .sombras{
     width: 96%;
