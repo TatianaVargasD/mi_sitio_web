@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.central{
+    /* z-index: 2; */
+    background-color: rgba(125, 127, 128, 0.872);
+    width: 100%;
+    height: 100vh;
+}
+.form{
+    width: 350px;
+    height: 320px;
+    border-radius: 12px;
+    background-color: rgb(54, 54, 234);
+}
+.boton-aceptar{
+    width: 80px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+.registro{
+    z-index: -1;
+    font-size: 1.2em;
+    padding:12px;
+    border-radius: 12px;
+    width: 250px;
+    height: 120px;
+    background-color: rgb(206, 156, 253);
+}
+.registro-centro{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
