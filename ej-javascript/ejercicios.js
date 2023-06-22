@@ -60,3 +60,23 @@ console.log("Conversión de decimal (5.3) a entero con ajuste hacia el techo " +
 /* ejemplo:let for=5;
 ejemplo:let switch="deporte";
 ejemplo:let while=1.5; */
+console.log("Operadores Aritméticos");
+let numArit1 =9;
+let numArit2 =6;
+console.log("Suma: ")
+console.log("numArit1(9) + numArit2(6) es igual a: "+ numArit1+ numArit2);
+console.log("Resta:")
+console.log("numArit2(6) - numArit1(9) es igual a: "+ (numArit2-numArit1));
+console.log("Multiplicación:")
+console.log("numArit1(9) * numArit2(6) es igual a: "+(numArit1*numArit2));
+console.log("División: ")
+let resultDiv=numArit1 /numArit2;
+console.log("Residuo: "+(numArit1 % numArit2));
+console.log("numArit1(9) / numArit2(6) es igual a: "+(numArit1/numArit2));
+console.log("Redondear Números: ");
+console.log("Redondear según promedio..");
+console.log(Math.round(resultDiv));
+console.log("Redondear hacia abajo");
+console.log(Math.floor(resultDiv));
+console.log("Redondear hacia arriba ");
+console.log(Math.ceil(resultDiv));
