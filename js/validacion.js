@@ -6,6 +6,6 @@ botonRegistrar.addEventListener("click",function(){
         alert("El nombre de usuario es un campo obligatorio,por favor ingreselo")
     }
     else{
-        alert("Bienveindo(a)")
+        alert("Bienvenido(a)")
     }
 });
