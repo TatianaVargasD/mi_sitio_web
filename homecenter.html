@@ -8,27 +8,29 @@
     <title>Homecenter</title>
 </head>
 <body>
-    <div class="central">
+    <div class="menu" id="MainBoxOne">
         <nav>
+            
             <ul>
-                <img class="logo" src="./img/logo_1.png"alt="">
-                <input  class="buscar" type="search"id="" placeholder="¿Qué estas buscando?">
-                <i class=" lupa fa-solid fa-magnifying-glass"></i>
-                <li><i class="icono fa-solid fa-location-dot"></i></i><a href="#"> Mi ubicación</a></li>
-                <li><i class="icono fa-solid fa-cart-shopping"></i></i></li>
-                <li><img class="cmr" src="./img/cmr-puntos.png" alt=""><a href="#">Programa CMR puntos</a></li>
-                <li><i class=" icono fa-solid fa-user"></i><a href="#">Mi cuenta</a></li>
+                <li><i class="Hamburguer fa-solid fa-bars"></i></li>
+                <li><img src="./img/homeCenterLogo.png" alt="" srcset="" class="img-logo"></li>
+                <img src="./img/LogoHomeCenterJunior.jpg" alt="" srcset="" class="img-logo-Jn">
+                <input type="search" name="" id="" placeholder="¿Qué estás buscando?" class="div-busqueda">
+                <i class="lupa fa-solid fa-magnifying-glass" id="Question"></i>
+                <li><i class="icono fa-solid fa-location-dot" ></i><a href="#">Ubicacion</a></li>
+                <li><i class="icono fa-solid fa-cart-shopping"></i><a href="#">Compras</a></li>
+                <li><img src="./img/CMR.png" alt="" srcset="" class="img-cmr"><a href="#">CMR Puntos</a></li>
+                <li><i class="icono fa-solid fa-user"></i><a href="#">Mi Cuenta</a></li>
             </ul>
         </nav>
     </div>
-    <div class="segundo">
-        <nav>
-            <ul>
-                <img src="./img/segundo.png" alt="">
-
-                <li></li>
-            </ul>
-        </nav>
+    <div class="menu-Busqueda-inactivo" id="MeinBoxTwo">
+        
+        <ul class="position">
+            <i class="lupa2 fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="" class="text" placeholder="¿Qué estas buscando?">
+            <i class="equis fa-solid fa-x" id="elimanar"></i>
+        </ul>
     </div>
     <script src="./js/homecenter.js"></script>
 </body>
