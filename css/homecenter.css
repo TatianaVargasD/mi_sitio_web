@@ -71,6 +71,113 @@ a{
 .Hamburguer{
     display: none;
 }
+.form-ana{
+    position: fixed;
+    width: 406px;
+    right: 20px;
+    height: 100vh;
+    top: 0;
+    display: grid;
+    grid-template:"frm-header" 70px
+                  "frm-body"minmax(150px,80vh)
+                  "frm-input" 60px
+                  "frm-exit"100px/
+                  406px;
+}
+.form-header{
+    grid-area: frm-header;
+    background-color: rgb(0, 114, 206);
+    display: flex;
+    flex-direction: row;
+}
+.img-ana-1{
+    width: 60px;
+    height: 60px;
+    margin-top:5px;
+    margin-left: 5px;
+}
+.img-ana-2{
+    width: 100px;
+    height: 95px;
+  /*   margin-top:5px;
+    margin-left: 5px; */
+}
+.title-form{
+    font-family: poppins;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-body{
+    grid-area: frm-body;
+    background-color: rgb(234,238,243);
+    display: grid;
+    grid-template: "empty-left  form-text empty-right"/
+                       50px        1fr        40px; 
+}
+.form-text{
+    grid-area: form-text;
+    background-color: darkcyan;
+    margin-top: 5px;
+}
+.form-input{
+    grid-area: frm-input;
+    background-color: rgb(234,238,243);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid rgb(0, 114, 206);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-text{
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(64,64,64);
+    font-family: poppins,sans-serif;
+    outline: none;
+}
+.icon-smile{
+    margin-right: 30px;
+    font-size: 1.3em;
+}
+.exit-style{
+    background-color: rgb(0, 114, 206);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.7em;
+    font-family: lato;
+    font-weight: 300;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-exit{
+    grid-area: frm-exit;
+    display: flex;
+    justify-content: flex-end;
+}
+.text-opciones{
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.text-form-black{
+    font-weight: 900;
+    display: block;
+    padding-top:40px;
+    letter-spacing: 0.5em;
+
+}
 @media only screen and (max-width:1300px){
     *{
         padding: 0;
