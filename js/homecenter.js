@@ -19,3 +19,7 @@ question.addEventListener("click",()=>{
     MainBoxtwo.classList.remove("menu-Busqueda")
     })
 })
+
+let iconArrowRight = document.getElementById("click",function(){
+
+});
