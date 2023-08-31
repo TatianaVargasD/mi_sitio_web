@@ -148,16 +148,13 @@ a{
 .box-main-slider{
     width: 325px;
     overflow: hidden;
-    background-color: blue;
 }
 .slider {
     grid-area: slider;
     font-size: .9em;
-    background-color: red;
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    /* flex-wrap: wrap; */
     flex-flow: column wrap;
     width: 325px;
     height: 123px;
@@ -205,6 +202,12 @@ a{
     font-weight: 400;
     margin-top: 10px;
 }
+.click-slider:hover{
+    background-color: rgb(172,185,255);
+    color:white;
+    height: 50px;
+    
+}
 
 .form-input {
     grid-area: frm-input;
@@ -249,7 +252,49 @@ a{
     display: flex;
     justify-content: flex-end;
 }
-
+.box-icon-arrow-left {
+    grid-area: box-icon-arrow-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-icon-arrow-right {
+    grid-area: box-icon-arrow-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-arrow-left{
+    grid-area: icon-arrow-left;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    
+}
+.fa-chevron-left{
+    font-size: 1.6em;
+    color: rgb(0,93,173);
+}
+.icon-arrow-right{
+    grid-area: icon-arrow-right;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.fa-chevron-right{
+    font-size: 1.6em;
+    color: rgb(0,93,173);
+}
 
 @media only screen and (max-width:1300px){
     *{
