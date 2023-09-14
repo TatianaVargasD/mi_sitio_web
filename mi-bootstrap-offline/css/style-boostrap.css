@@ -1,0 +1,11 @@
+.box-top{
+    width: 100%;
+    height: 300px;
+}
+.menu-fixed{
+    position: fixed;
+}
+.menu-hidden{
+    position: static;
+    visibility: hidden;
+}
