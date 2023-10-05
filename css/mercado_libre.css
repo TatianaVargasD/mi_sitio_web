@@ -1,10 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 .img{
     width: 50px;
     height: 35px;
+    padding-left: 7px;
+    padding-top: 8px;
+    
+
 }
 .primero{
 background-color: rgb(255,241,89);
@@ -14,26 +20,102 @@ background-color: rgb(255,241,89);
     background-color:  rgb(255,241,89);
     width: 100%;
     height: 30px;
-}
-.busqueda{
-    width: 200px;
-    height: 30px;
-}
-.busqueda{
     display: flex;
     flex-direction: row;
+    padding-top: 25px;
+}
+.central{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row; 
+}
+.busqueda{
+    padding: 2px;
+    font-size:1em;
+    width: 180px;
+    outline: none;
+    border: 1px solid white;
+}
+.box-busqueda{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin: auto 20px;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 4px;
+
+}
+.lupa{
+    padding: 5px;
+    color: rgb(201, 201, 201);
+}
+.burguer{
+    padding-top: 15px;
+    font-size: 1.4em;
+}
+.carrito{
+    padding-top: 15px;
+    font-size: 1.2em;
+    padding-left:20px ;
 }
 .box-auto{
+    margin-top: 40px;
     width: 100%;
-    height: 200px;
-    background-color: aquamarine;
+  /*   height: 200px; */
     display: grid;
-    grid-template:"box-img box-info"250px/
-                    1fr       2fr;
+    grid-template:"empty-left box-img box-info empty-right"250px/
+                    20px        6fr     7fr        20px;   
 }
 .box-img{
     grid-area:box-img;
 }
+.box-corazon{
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+.corazon{
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    position: relative;
+    top: 20px;
+    left: -10px;
+    background-color: rgba(255,255,255,.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-style-hearth{
+    color: rgb(57,57,233,.8);
+}
+.box-img:hover{
+    cursor: pointer;
+}
+.box-img:hover > .box-corazon{
+    visibility: visible;
+}
 .box-info{
     grid-area: box-info;
+    margin-left: 30px;
 } 
+.img-auto{
+    width: 100%;
+}
+.info-marca{
+    display: flex;
+    flex-direction: row;
+}
+.txt-precio{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+.txt-marca, .txt-modelo{
+    font-size: .8em;
+    margin-right: 10px;
+}
