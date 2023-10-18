@@ -46,50 +46,75 @@ a{
     border-radius: 30px 12px;
 }
 .titulo{
-    font-size: 2em;
+    font-size: 2.5em ; 
+    font-weight: bold;
     color: white;
-    padding-right: 54%;
+    padding-right: 65%;
 
 }
 .box{
     display: grid;
-    grid-template-columns: 100px 250px 150px;
-    grid-template-rows: 100px 250px 150px;
+    grid-template-rows: 750px;
     border: 1px solid rgba(146, 144, 144, 0.8);
     max-width: 100%;
     background-color: red;
 }
 .box-1{
-    display: flex;
-    background-color: rgb(213, 198, 226);
-}
-.uno{
     display: grid;
-    grid-template-columns:repeat(2,150px) 1fr;
+    background-color: rgb(213, 198, 226);
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows:repeat(3,300px)
+    
+}
+.cartas{
+    background-color: aqua;
+    width: 100%;
+    height: 600px;
+   grid-template:"empty  empty-1 titulo  empty-2  empty"200px
+                  "empty  carta-1 carta-2 carta-3  empty"200px/
+                   1fr     300px   300px   300px     1fr; 
+   
+}
+ .title-cards{
+    grid-area: titulo;
+    background-color: aqua;
+    width: 100%;
+}
+.carta-1{
+    grid-area: carta-1;
+    background-color: blueviolet;
+    width: 100%;
+}
+.carta-2{
+    grid-area: carta-2;
+    background-color: blanchedalmond;
+    width: 100%;
+}
+.carta-3{
+    grid-area: carta-3;
+    background-color: rgb(166, 166, 19);
+    width: 100%;
+}  
+/* .uno{
+    display: grid;
+    grid-template-columns:repeat(4,150px) 1fr;
     grid-template-rows:repeat(2,150px)100px;
     border: 1px solid rgba(146, 144, 144, 0.8);
     max-width: 100%
-}
-.box-2{
-    display: flex;
-    background-color: rgb(238, 128, 238);
+} */
 
-}
-.dos{
+/* .dos{
     display: grid;
     grid-template-columns:repeat(2,150px) 1fr;
     grid-template-rows:repeat(2,150px)100px;
     border: 1px solid rgba(146, 144, 144, 0.8);
     max-width: 100%;
-}
-.box-3{
-    display: flex;
-    background-color: rgb(163, 238, 94);
-}
-.tres{
+} */
+
+/* .tres{
     display: grid;
     grid-template-columns:repeat(2,150px) 1fr;
     grid-template-rows:repeat(2,150px)100px;
     border: 1px solid rgba(146, 144, 144, 0.8);
     max-width: 100%
-}
+} */
