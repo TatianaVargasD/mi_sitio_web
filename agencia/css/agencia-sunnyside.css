@@ -15,24 +15,49 @@ li{
     padding: 30px;
 }
 .opciones{
-    padding-top: 10px;
+    width: 100%;
+    /* background-color: black; */
+    color:white;
     display: flex;
-    text-align: right;
+    flex-direction: row;
+}
+.box-titled{
+    margin-top: 20px;
+    font-size: 1.5em;
+   
+    width: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+.box-option{
+    width: 50%;
+    margin-top: 20px;
+    font-size: 1.4em;
+    display: flex;
     justify-content: end;
+    align-items: center;
     padding-right: 30px;
 }
 a{
     color:white;
     text-decoration: none;
 }
+.central{
+    border: none;
+    background-color: black ;
+}
 .parrafo{
+    position: relative;
+    z-index: 4;
+    top: 120px;
+    
     padding-top: 5px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     color:white;
-    font-size: 2.5em;
+    font-size: 5em;
+    font-weight: 800;
+    border: none;
 }
 .contact{
     color: black;
@@ -41,6 +66,18 @@ a{
     border-radius: 40px;
     background: white;
     font-size: 1em;
+}
+.flecha{
+    position: absolute;
+    
+    top: 36%;
+    left: 46%; 
+    height: 60px;
+}
+.icono{
+    font-size: 6em;
+    font-weight: 100;
+    color: white;
 }
 .contact:hover{
     border-radius: 30px 12px;
@@ -52,49 +89,121 @@ a{
     padding-right: 65%;
 
 }
+.img-header{
+    width: 100%;
+    height: 600px;
+    border: none;
+}
 .box{
-    display: grid;
-    grid-template-rows: 750px;
-    border: 1px solid rgba(146, 144, 144, 0.8);
     max-width: 100%;
-    background-color: red;
+    height: 600px;
 }
 .box-1{
     display: grid;
     background-color: rgb(213, 198, 226);
     grid-template-columns: repeat(2,1fr) ;
-    grid-template-rows:repeat(3,300px)
-    
+    grid-template-rows:repeat(3,520px)   
+}
+.uno,.cuatro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+h3{
+    font-weight: bolder;
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    padding: 30px;
+}
+ul{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 800;
+}
+.cinco{
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+.info-cinco{
+    position: relative;
+    z-index: 4;
+    top: -170px;
+    text-align: center;
+   
+}
+.img-body-one{
+    width: 100%;
+    height: 520px;;
+}
+
+.info{
+      display: grid;
+      width: 100%;
+      height: 600px;
+      grid-template: "empty-left titulo  empty-right" 100px
+                     "empty-left cartas empty-right" /
+                     30px         1fr    30px;
 }
 .cartas{
-    background-color: aqua;
+    /* background-color: aqua; */
+    display: grid;
+    grid-area: cartas;
     width: 100%;
-    height: 600px;
-   grid-template:"empty  empty-1 titulo  empty-2  empty"200px
-                  "empty  carta-1 carta-2 carta-3  empty"200px/
-                   1fr     300px   300px   300px     1fr; 
-   
+    grid-template:" carta-1 carta-2  carta-3  "500px/
+                    1fr     1fr      1fr       ; 
 }
  .title-cards{
     grid-area: titulo;
     background-color: aqua;
     width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .carta-1{
     grid-area: carta-1;
     background-color: blueviolet;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .carta-2{
     grid-area: carta-2;
     background-color: blanchedalmond;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .carta-3{
     grid-area: carta-3;
     background-color: rgb(166, 166, 19);
     width: 100%;
-}  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.img-bajas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    height: 350px;
+} 
+.footer-info{
+    background-color: #91D3C6;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* .uno{
     display: grid;
     grid-template-columns:repeat(4,150px) 1fr;
