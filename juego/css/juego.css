@@ -1,19 +1,36 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
-.fondo{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/kfo6_lglq_220301.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-   
+.main-img{
+    position: fixed;
+    top: 0;
+    width: 100000px;
+    height: 104vh;
+    background-size: contain;
+    background-position:center bottom;
+    background-repeat: repeat-x;
+    background-image: url("../img/kfo6_lglq_220301.jpg");
+    z-index: 10;
 }
-.car{
-    width: 10%;
+.main-img-0{
+    left: 0;
+}
+.main-img-1{
+  left: -90000px;
+  transition: all 200s;
+}
+.style-gif{
     position: absolute;
-    z-index: 70;
-    background-image: url(../img/car-driving-7.gif);
+    width: 200px;
+    z-index: 20;
+}
+.main-carrito-up-0 {
+    bottom: 170px;
+    transition: all 2s;
+}
+.main-carrito-up-1 {
+    bottom: 80px;
+    transition: all 2s;
+   
 }
