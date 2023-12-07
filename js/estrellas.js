@@ -1,8 +1,6 @@
 let calificar = document.getElementById("calificar");
-
 const GenerarCalificacion = () => {
   let calificacion = document.getElementById("estrellas").value;
-
   let estrellas = document.querySelector(".calificacion");
   estrellas.innerHTML = "";
   
@@ -29,3 +27,5 @@ const GenerarCalificacion = () => {
 calificar.addEventListener("click", () => {
   GenerarCalificacion();
 });
+
+

@@ -1,4 +1,3 @@
-
 let boton=document.getElementById("button");
 
 
@@ -9,6 +8,7 @@ boton.addEventListener("click",function(){
     let inputThree=parseFloat(document.getElementById("three").value);
     let inputFour=parseFloat(document.getElementById("four").value);
     let inputFive=parseFloat(document.getElementById("five").value);
+    
    
     let total=inputOne+inputTwo+inputThree+inputFour+inputFive;
     const porcentajes=[
@@ -22,42 +22,29 @@ boton.addEventListener("click",function(){
     generarGrafico(porcentajes)
 })
 
-
-
-
 const colores=[
-    "blue","red","green","black","gray"
+    "gray",
+    "gray",
+    "gray",
+    "gray",
+    "gray"
 ]
 function generarGrafico(porcentajes){
-    let graficos=document.getElementById("graficos");
-    graficos.innerHTML=""
-    for (let i = 0; i < colores.length; i++) {
+    let graficos=document.querySelectorAll('.barras')
+    let porcentaje=document.querySelectorAll('.porcentaje') 
+    for (let i = 0; i < graficos.length; i++) {
+        graficos[i].innerHTML="";
         let grafico=document.createElement("div");
-        graficos.appendChild(grafico);
-        let texto = document.createElement('span');
-        grafico.appendChild(texto)
-        texto.innerHTML=porcentajes[i]+"%";
-        texto.style.color="white";
-        texto.style.fontSize="1em";
-        texto.style.textAlign="center";
-       
-        for (let e = 0; e < porcentajes.length; e++) {
-            grafico.style.background=colores[i];
+        grafico.style.background=colores[i];
+        grafico.style.width="0";
+        grafico.style.height="40px";
+        grafico.style.borderRadius='7px';
+        porcentaje[i].innerHTML=porcentajes[i]+"%";
+        porcentaje[i].style.color="black"
+        graficos[i].appendChild(grafico);
+        setInterval(() => {
             grafico.style.width=porcentajes[i]+"%";
-            grafico.style.height="20px";
-            grafico.style.margin="7px";
-            graficos.appendChild(grafico);
-       }
+            grafico.style.transition="width 1s";
+        }, 10);
     }
-   
 }
-
-
-let titulo=document.getElementById("titulo")
-titulo.style.color="blue";
-titulo.style.textAlign="center";
-let div=document.querySelector(".div");
-div.style.background="rgb(190, 239, 223)";
-div.style.textAlign="center";
-div.style.width="20%";
-div.style.height="40vh";

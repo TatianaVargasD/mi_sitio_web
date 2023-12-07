@@ -4,32 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barra De Puntuación</title>
+    <link rel="stylesheet" href="./css/barra_puntuacion.css">
 </head>
 <body>
     <h1 id="titulo">Barra de puntuación</h1>
-    <div class="div">
-        <form action="">
-            <label for="">1</label>
-            <input type="number" name="" id="one" placeholder="ingrese un numero"> <br>
+    <div class="square">
+            <div class="validacion">
+                <form action="">
+                    <h2>Ingrese un número en cada campo</h2> <br>
+                    <input type="number" name="" id="one" required> 
+                    <input type="number" name="" id="two"  required>
+                    <input type="number" name="" id="three" required>
+                    <input type="number" name="" id="four" required>
+                    <input type="number" name="" id="five"  required>
+                </form> <br>
+                <button id="button" type="submit" class="button" >Generar barra</button> 
+               
+            </div>
             <br>
-            <label for="">2</label>
-            <input type="number" name="" id="two" placeholder="ingrese un numero"><br>
-            <br>
-            <label for="">3</label>
-            <input type="number" name="" id="three" placeholder="ingrese un numero"><br>
-            <br>
-            <label for="">4</label>
-            <input type="number" name="" id="four" placeholder="ingrese un numero"><br>
-            <br>
-            <label for="">5</label>
-            <input type="number" name="" id="five" placeholder="ingrese un numero"><br>
-        </form> <br>
     </div>
     <div id="graficos">
+        <div class="boxBarra">
+            <div class="barras" id="barras">
+            </div>
+            <span class="porcentaje"></span>
+        </div>
+        <div class="boxBarra">
+            <div class="barras">
 
+            </div>
+            <span class="porcentaje"></span>
+        </div>
+        <div class="boxBarra">
+            <div class="barras">
+
+            </div>
+            <span class="porcentaje"></span>
+        </div>
+        <div class="boxBarra">
+            <div class="barras">
+            </div>
+            <span class="porcentaje"></span>
+        </div>
+        <div class="boxBarra">
+            <div class="barras">
+            </div>
+            <span class="porcentaje"></span>
+        </div>
     </div>
-  
-    <button id="button" type="submit">Generar barra</button>
 </body>
 <script src="js/barra_puntuacion.js"></script>
 </html>
